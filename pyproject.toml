@@ -1,5 +1,5 @@
 [project]
-name = "project 2- aircraft tracker"
+name = "project_aircraft_tracker"
 version = "0.1.0"
 description = ""
 authors = [
@@ -7,6 +7,7 @@ authors = [
 ]
 requires-python = ">=3.14"
 dependencies = [
+    "requests (>=2.34.2,<3.0.0)"
 ]
 
 [tool.poetry]
@@ -15,3 +16,8 @@ packages = [{include = "project 2"}]
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "pytest (>=9.2.0,<10.0.0)"
+]
